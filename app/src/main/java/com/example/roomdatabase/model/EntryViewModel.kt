@@ -5,9 +5,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.example.roomdatabase.data.Siswa
-import com.example.roomdatabase.repositori.OfflineRepositoriSiswa
+import com.example.roomdatabase.repositori.RepositoriSiswa
 
-class EntryViewModel (private val repositoriSiswa: OfflineRepositoriSiswa): ViewModel() {
+class EntryViewModel(private val repositoriSiswa: RepositoriSiswa): ViewModel() {
 
     /*Berisi Status Siswa Saat Ini*/
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
